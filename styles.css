@@ -1,0 +1,406 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding-top: 3.2rem;
+}
+
+
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f3cc9;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* Burger Menu */
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.burger-menu .line {
+    background-color: white;
+    height: 3px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+
+
+
+.video-section video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.download-btn {
+  position: absolute;
+    background-color: #008080;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #005959;
+}
+
+.download-icon {
+    margin-left: 8px;
+}
+
+
+
+
+.drawer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75vh;
+    background-color: #fff;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.drawer.open {
+    transform: translateY(0);
+}
+
+.drawer-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.close-btn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.drawer-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    text-align: start;
+}
+
+.drawer-logo {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #f0f0f0;
+    padding: 5px;
+}
+
+.app-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #110187;
+    margin: 0;
+}
+
+.company-name {
+    font-size: 1rem;
+    color: #3c3c3c;
+}
+
+.drawer-stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+}
+
+.drawer-stats div h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.drawer-stats div p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.download-apk-btn {
+    background-color: #010887;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.download-apk-btn:hover {
+    background-color: #2b00c7;
+}
+
+.drawer-images {
+    display: flex;
+    overflow-x: auto;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.drawer-img {
+    height: 280px;
+    width: 170px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.drawer-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+@media (max-width: 768px) {
+    .drawer-content {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .app-title {
+        font-size: 1.5rem;
+    }
+
+    .drawer-images {
+        gap: 10px;
+    }
+
+    .download-apk-btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+
+
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Plans Container */
+#plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    
+}
+
+/* Plan Card */
+.plan-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.2s ease;
+    margin-bottom: 12px;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Plan Header */
+.plan-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.plan-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0f3cc9;
+}
+
+.turbo-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.plan-5g-badge {
+    background-color: #017520;
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px 9px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Plan Details */
+.plan-details {
+    font-size: 1rem;
+    color: #121111;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Pricing Section */
+.plan-pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #ff0080;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.discount-text {
+    background-color: #0f3cc9;
+    color: white;
+    font-size: 0.8rem;
+    padding: 3px 6px;
+    border-radius: 8px;
+}
+
+/* Final Price */
+.plan-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2300e6;
+    margin-bottom: 15px;
+}
+
+/* Recharge Button */
+.plan-button {
+    background-color: #0a0067;
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+    background-color: #006043;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #plans {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .plan-card {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+

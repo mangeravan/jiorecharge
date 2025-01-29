@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/svg+xml" href="/assets/jioLogo.png" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jio Recharge Offers - Best Plans & Deals</title>
+    <meta
+      name="description"
+      content="Discover the latest Jio recharge offers and plans. Find the best deals for your prepaid and postpaid connections. Save more on your mobile recharge today!"
+    />
+    <meta
+      name="keywords"
+      content="Jio recharge offers, Jio plans, mobile recharge, Jio deals, prepaid plans, postpaid plans"
+    />
+    <meta name="author" content="Jio Recharge" />
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta
+      property="og:title"
+      content="Jio Recharge Offers - Best Plans & Deals"
+    />
+    <meta
+      property="og:description"
+      content="Check out the latest Jio recharge offers and save on your mobile plans. Don't miss out on the best deals for Jio users."
+    />
+    <meta
+      property="og:image"
+      content="./assets/jioLogo.png"
+    />
+    <meta
+      property="og:url"
+      content="https://yourwebsite.com/jio-recharge-offers"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Jio Recharge Offers - Best Plans & Deals"
+    />
+    <meta
+      name="twitter:description"
+      content="Save big with the latest Jio recharge offers. Explore affordable prepaid and postpaid plans."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourwebsite.com/path-to-image/jio-recharge-offers.jpg"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://yourwebsite.com/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="avatar">
+          <img src="./assets/jioLogo.png" alt="Avatar" class="avatar-img" />
+        </div>
+
+        <div class="title">
+          <p>JioReacharg</p>
+        </div>
+
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <!-- Video Section -->
+      <div class="video-section">
+        <video loop autoplay muted>
+          <source src="./assets/true5g-v5.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <!-- Image Section 1 -->
+      <div class="image-section">
+        <img src="./assets/img1.jpg" alt="Image 1" />
+      </div>
+
+      <!-- plan box -->
+
+
+
+      <div class="plans-container">
+        <h1 style="text-align: center; padding: 20px 10px">Recharge Plans</h1>
+        <div id="plans" class="plans"></div>
+       
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Image Section 2 with Button -->
+      <div class="image-section relative">
+        <img src="./assets/dimg.jpg" alt="Image 2" />
+        <button
+          style="position: absolute; top: 40%; right: 20%"
+          class="download-btn"
+          onclick="toggleDrawer(true)"
+        >
+          Download JioReacharg <i class="download-icon"></i>
+        </button>
+      </div>
+
+      <!-- Image Section 3 -->
+      <div class="image-section">
+        <img src="./assets/img2.jpg" alt="Image 3" />
+      </div>
+
+      <!-- Image Section 4 -->
+      <div class="image-section">
+        <img src="./assets/homeimg1.jpg" alt="Image 4" />
+      </div>
+
+      <!-- Image Section 5 -->
+      <div class="image-section">
+        <img src="./assets/homeimg2.jpg" alt="Image 5" />
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Drawer (Popup) Section  start here -->
+      <div id="drawer" class="drawer">
+        <div class="drawer-content">
+          <div class="drawer-header">
+            <img
+              src="./assets/jioLogo.png"
+              alt="Jio Logo"
+              class="drawer-logo"
+            />
+            <div>
+              <p class="app-title">JioRecharge</p>
+              <small class="company-name">Jio Ltd.</small>
+            </div>
+          </div>
+          <div class="drawer-stats">
+            <div>
+              <h4>4.6⭐</h4>
+              <p>3.04 reviews</p>
+            </div>
+            <div>
+              <h4>50M+</h4>
+              <p>Downloads</p>
+            </div>
+            <div>
+              <h4>3+</h4>
+              <p>Rated for 3+</p>
+            </div>
+          </div>
+
+          <a href="./assets/JioRecharge.apk">
+            <button class="download-apk-btn" onclick="toggleDrawer(false)">
+              Download
+            </button>
+          </a>
+
+
+
+          <div class="drawer-images">
+            <img
+              src="./assets/d1.jpg"
+              alt="Screenshot 1"
+              class="drawer-img"
+            />
+            <img src="./assets/d2.jpg " alt="Screenshot 2" class="drawer-img" />
+            <img src="./assets/d3.jpg " alt="Screenshot 2" class="drawer-img" />
+            <img src="./assets/d5.jpg " alt="Screenshot 2" class="drawer-img" />
+            <img src="./assets/d6.jpg " alt="Screenshot 2" class="drawer-img" />
+            <img src="./assets/d4.jpg " alt="Screenshot 2" class="drawer-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
