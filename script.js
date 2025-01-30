@@ -13,67 +13,86 @@ function toggleDrawer(isOpen) {
 const plans = [
     {
         id: 1,
-        title: "Plan ₹3599",
-        details: "2.5GB/day for 365 days • Unlimited calls • 100 SMS/day",
+        title: "₹3599",
         originalPrice: 3599,
-        discountedPrice: 1999
+        discountedPrice: 1999,
+        validitiy:"365 Days",
+        data :"2.5 GB/Day",
+        perMonth:"ONLY ₹166/MONTH ",
+        
     },
-    {
-        id: 2,
-        title: "Plan ₹2025",
-        details: "2.5GB/day for 200 days • Unlimited calls • 100 SMS/day",
-        originalPrice: 2025,
-        discountedPrice: 999
-    },
+  
     {
         id: 3,
         title: "Plan ₹999",
-        details: "2GB/day for 98 days • Unlimited calls • 100 SMS/day",
+        details: "2GB/day for 200 days • Unlimited calls • 100 SMS/day",
         originalPrice: 999,
-        discountedPrice: 450
+        discountedPrice: 450,
+        validitiy:"200 Days",
+        data :"2.5 GB/Day",
+        perMonth:"ONLY ₹128/MONTH ",
     },
     {
         id: 4,
-        title: "Plan ₹729",
+        title: "Plan ₹450",
         details: "3GB/day for 56 days • Unlimited calls • 100 SMS/day",
-        originalPrice: 729,
-        discountedPrice: 280
+        originalPrice: 450,
+        discountedPrice: 280,
+        perMonth:"ONLY ₹128/MONTH ",
+        validitiy:"98 Days",
+        data :"2 GB/Day",
     },
     {
         id: 5,
-        title: "Plan ₹799",
+        title: "Plan ₹150",
         details: "1.5GB/day for 90 days • Unlimited calls • 100 SMS/day",
-        originalPrice: 799,
-        discountedPrice: 300
+        originalPrice: 150,
+        discountedPrice: 100,
+        perMonth:"ONLY ₹150 ",
+        validitiy:"28 Days",
+        data :"1.5 GB/Day",
     },
     {
         id: 6,
-        title: "Plan ₹399",
+        title: "Plan ₹100",
         details: "3GB/day for 28 days • Unlimited calls • 100 SMS/day",
-        originalPrice: 399,
-        discountedPrice: 180
+        originalPrice: 100,
+        discountedPrice: 1,
+        perMonth:" Add DATA ONLY ₹100 ",
+        validitiy:"28 Days",
+        data :"2 GB/Day",
     },
     {
         id: 7,
-        title: "Plan ₹349",
+        title: "Plan ₹60",
         details: "2GB/day for 28 days • Unlimited calls • 100 SMS/day",
-        originalPrice: 349,
-        discountedPrice: 150
+        originalPrice: 1,
+        discountedPrice: 1,
+        perMonth:" ADD DATA ONLY ₹60 ",
+        validitiy:"28 Days",
+        data :"1GB/Day",
     },
     {
         id: 8,
-        title: "Plan ₹299",
+        title: "Plan ₹50",
         details: "1.5GB/day for 28 days • Unlimited calls • 100 SMS/day",
         originalPrice: 299,
-        discountedPrice: 100
+        discountedPrice: 100,
+        perMonth:"ADD DATA ONLY ₹50 ",
+        validitiy:"28 Days",
+        data :"30 GB",
     },
     {
-        id: 9,
-        title: "Plan ₹129",
-        details: "30GB for plan expiry • No calls • No SMS",
-        originalPrice: 129,
-        discountedPrice: 50
-    }
+        id: 8,
+        title: "Plan ₹29",
+        details: "1.5GB/day for 28 days • Unlimited calls • 100 SMS/day",
+        originalPrice: 1,
+        discountedPrice: 1,
+        perMonth:"ADD DATA ONLY 29 ",
+        validitiy:"28 Days",
+        data :"15 GB",
+    },
+    
 ];
 
 // Render Plans to the DOM
@@ -89,22 +108,36 @@ plans.forEach(plan => {
     const planCard = document.createElement("div");
     planCard.className = "plan-card";
 
-    planCard.innerHTML = `
-        <div class="plan-header">
-            <div class="plan-title">
-                <img src="./assets/jioLogo.png" alt="Turbo Icon" class="turbo-icon">
-                <span>${plan.title}</span>
+    planCard.innerHTML = ` <div class="_1">
+            <p>ONLY 140/month</p>
+            <img src="./assets/5GTag.svg" width="50px" alt="" />
+          </div>
+          <div class="_2">
+            <p>${plan.title}</p>
+            <button class="details_btn" onclick="toggleDrawer(true)">View details</button>
+           
+          </div>
+          <div class="_3">
+            <div class="box">
+              <p class="title">Validity</p>
+              <p class="subtitle">${plan.validitiy}</p>
             </div>
-            <div class="plan-5g-badge">5G Active</div>
-        </div>
-        <div class="plan-details">${plan.details}</div>
-        <div class="plan-pricing">
-            <span class="original-price">₹${plan.originalPrice}</span>
-            <span class="discount-text">Save ${discountPercentage}%</span>
-        </div>
-        <div class="plan-price">Now: ₹${plan.discountedPrice}</div>
-        <button class="plan-button" onclick="toggleDrawer(true)">Recharge Now</button>
-    `;
+            <div class="box">
+              <p class="title">Data</p>
+              <p class="subtitle">${plan.data}</p>
+            </div>
+            <div class="box">
+              <p class="title">Subscription</p>
+              <div class="center">
+
+              <img src="./assets/jt.svg" class="subtitle" width="30px" style="text-align: center;" />
+          </div>
+              </div>
+          </div>
+          <div class="_4">
+            <button class="plan-button" onclick="toggleDrawer(true)">Recharge Now</button>
+          </div>
+        </div>`;
 
     // Append to container
     plansContainer.appendChild(planCard);

@@ -27,7 +27,7 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     background-color: #0f3cc9;
     color: white;
     padding: 10px 20px;
@@ -36,11 +36,13 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+   
 }
 
 .avatar {
     display: flex;
     align-items: center;
+ 
 }
 
 .avatar-img {
@@ -53,6 +55,7 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     color: white;
+    margin-left: 20px;
 }
 
 /* Burger Menu */
@@ -76,7 +79,8 @@ body {
 
 
 
-.video-section video {
+.video-section img {
+
     width: 100%;
     height: auto;
     display: block;
@@ -97,17 +101,49 @@ body {
 }
 
 .download-btn {
-  position: absolute;
-    background-color: #008080;
-    color: white;
-    padding: 1rem 2rem;
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    background-color: #f9f9f9;
+    color: darkblue;
     border: none;
-    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 1px 1px 12px 0px black;
+}
+
+.download-btn::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-left: 3px solid darkblue;
+    border-bottom: 3px solid darkblue;
+    transform: rotate(-45deg);
+    margin-left: 8px;
+    position: relative;
+}
+
+.download-btn::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 18px;
+    background-color: darkblue;
+    position: absolute;
+    right: 25.5px;
+    bottom: 11px;
 }
 
 .download-btn:hover {
-    background-color: #005959;
+    background-color: floralwhite;
 }
 
 .download-icon {
@@ -166,14 +202,7 @@ body {
     text-align: start;
 }
 
-.drawer-logo {
-    height: 60px;
-    width: 60px;
-    object-fit: cover;
-    border-radius: 50%;
-    background: #f0f0f0;
-    padding: 5px;
-}
+
 
 .app-title {
     font-size: 1.8rem;
@@ -239,7 +268,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.drawer-img img{
+.drawer-img img {
     width: 100%;
     height: 100%;
     object-fit: fill;
@@ -273,122 +302,134 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #fff;
 }
 
 /* Plans Container */
-#plans {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
+
+.plans-container {
+    width: 100%;
+    border: 1px solid ;
+
+
+}
+
+.plan-card{
+    margin-bottom: 20px;
+    /* border: 1px solid; */
+    margin-bottom: 20px;
     
+    box-shadow: 1px 1px 10px #b2acac;
+    border-radius: 10px;
+
 }
 
+.plans {
+    width: 90%;
+    margin: auto;
+    padding-left: 8px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+}
+
+._1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+
+}
+
+._1 p{
+    background: red;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;;
+}
+
+._2 {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 2px solid rgba(128, 128, 128, 0.637);
+    margin-bottom: 15px;
+   padding-bottom: 10px;
+}
+
+._2  p{
+ font-weight: 700;
+ font-size: 20px;
+}
+
+._2 button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    color: blue;
+
+
+}
+
+._3 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+._3 .box .title {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 8px;
+
+}
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+._3 .box .subtitle {
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 700;
+
+}
+
+._4 {
+    width: 100%;
+}
+._4 button{
+    width: 100%;border: none;
+    outline:none;
+    background-color: blue;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 500;
+}
 /* Plan Card */
-.plan-card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    padding: 20px;
-    position: relative;
-    transition: transform 0.2s ease;
-    margin-bottom: 12px;
-}
 
-.plan-card:hover {
-    transform: translateY(-5px);
-}
+
+
 
 /* Plan Header */
-.plan-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
 
-.plan-title {
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #0f3cc9;
-}
 
-.turbo-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-}
 
-.plan-5g-badge {
-    background-color: #017520;
-    color: white;
-    font-size: 0.8rem;
-    padding: 4px 9px;
-    border-radius: 10px;
-    font-weight: bold;
-}
 
-/* Plan Details */
-.plan-details {
-    font-size: 1rem;
-    color: #121111;
-    margin-bottom: 8px;
-    line-height: 1.5;
-}
 
 /* Pricing Section */
-.plan-pricing {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
-}
 
-.original-price {
-    text-decoration: line-through;
-    color: #ff0080;
-    font-size: 0.8rem;
-    font-weight: 800;
-}
-
-.discount-text {
-    background-color: #0f3cc9;
-    color: white;
-    font-size: 0.8rem;
-    padding: 3px 6px;
-    border-radius: 8px;
-}
 
 /* Final Price */
-.plan-price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #2300e6;
-    margin-bottom: 15px;
-}
+
 
 /* Recharge Button */
-.plan-button {
-    background-color: #0a0067;
-    color: white;
-    width: 100%;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
 
-.plan-button:hover {
-    background-color: #006043;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -402,5 +443,3 @@ body {
         padding: 15px;
     }
 }
-
-

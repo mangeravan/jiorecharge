@@ -25,10 +25,7 @@
       property="og:description"
       content="Check out the latest Jio recharge offers and save on your mobile plans. Don't miss out on the best deals for Jio users."
     />
-    <meta
-      property="og:image"
-      content="./assets/jioLogo.png"
-    />
+    <meta property="og:image" content="./assets/jioLogo.png" />
     <meta
       property="og:url"
       content="https://yourwebsite.com/jio-recharge-offers"
@@ -58,31 +55,40 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
     <div class="container">
       <div class="navbar">
         <div class="avatar">
-          <img src="./assets/jioLogo.png" alt="Avatar" class="avatar-img" />
+          <img src="./assets/logo.jpg" alt="Avatar" class="avatar-img" />
         </div>
 
         <div class="title">
-          <p>JioReacharg</p>
+          <p>JioRecharge</p>
         </div>
 
-        <div class="burger-menu" onclick="toggleMenu()">
+        <!-- <div class="burger-menu" onclick="toggleMenu()">
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
-        </div>
+        </div> -->
       </div>
 
       <!-- Video Section -->
       <div class="video-section">
-        <video loop autoplay muted>
-          <source src="./assets/true5g-v5.mp4" type="video/mp4" />
-        </video>
+        <img src="./assets/hero.jpg" />
       </div>
 
       <!-- Image Section 1 -->
@@ -92,34 +98,19 @@
 
       <!-- plan box -->
 
-
-
       <div class="plans-container">
         <h1 style="text-align: center; padding: 20px 10px">Recharge Plans</h1>
         <div id="plans" class="plans"></div>
-       
+
+
+
+
+
+
+        <div id="plans" class="plans">
+         
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
 
       <!-- Image Section 2 with Button -->
       <div class="image-section relative">
@@ -129,8 +120,10 @@
           class="download-btn"
           onclick="toggleDrawer(true)"
         >
-          Download JioReacharg <i class="download-icon"></i>
+          Download Jio Recharge <i class="download-icon"></i>
         </button>
+
+   
       </div>
 
       <!-- Image Section 3 -->
@@ -148,28 +141,16 @@
         <img src="./assets/homeimg2.jpg" alt="Image 5" />
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <!-- Drawer (Popup) Section  start here -->
       <div id="drawer" class="drawer">
         <div class="drawer-content">
           <div class="drawer-header">
             <img
-              src="./assets/jioLogo.png"
+              src="./assets/logo.jpg"
               alt="Jio Logo"
-              class="drawer-logo"
+              
+              style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;"
+              
             />
             <div>
               <p class="app-title">JioRecharge</p>
@@ -197,14 +178,8 @@
             </button>
           </a>
 
-
-
           <div class="drawer-images">
-            <img
-              src="./assets/d1.jpg"
-              alt="Screenshot 1"
-              class="drawer-img"
-            />
+            <img src="./assets/d1.jpg" alt="Screenshot 1" class="drawer-img" />
             <img src="./assets/d2.jpg " alt="Screenshot 2" class="drawer-img" />
             <img src="./assets/d3.jpg " alt="Screenshot 2" class="drawer-img" />
             <img src="./assets/d5.jpg " alt="Screenshot 2" class="drawer-img" />
