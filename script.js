@@ -13,8 +13,8 @@ function toggleDrawer(isOpen) {
 const plans = [
     {
         id: 1,
-        title: "₹3599",
-        originalPrice: 3599,
+        title: "₹1999",
+        originalPrice: 1999,
         discountedPrice: 1999,
         validitiy:"365 Days",
         data :"2.5 GB/Day",
@@ -34,7 +34,7 @@ const plans = [
     },
     {
         id: 4,
-        title: "Plan ₹450",
+        title: "Plan ₹280",
         details: "3GB/day for 56 days • Unlimited calls • 100 SMS/day",
         originalPrice: 450,
         discountedPrice: 280,
@@ -42,6 +42,8 @@ const plans = [
         validitiy:"98 Days",
         data :"2 GB/Day",
     },
+
+    
     {
         id: 5,
         title: "Plan ₹150",
@@ -54,6 +56,16 @@ const plans = [
     },
     {
         id: 6,
+        title: "Plan ₹300",
+        details: "1.5GB/day for 90 days • Unlimited calls • 100 SMS/day",
+        originalPrice: 150,
+        discountedPrice: 100,
+        perMonth:"ONLY ₹100 ",
+        validitiy:"28 Days",
+        data :"1.5 GB/Day",
+    },
+    {
+        id: 7,
         title: "Plan ₹100",
         details: "3GB/day for 28 days • Unlimited calls • 100 SMS/day",
         originalPrice: 100,
@@ -63,7 +75,17 @@ const plans = [
         data :"2 GB/Day",
     },
     {
-        id: 7,
+        id: 8,
+        title: "Plan ₹180",
+        details: "3GB/day for 28 days • Unlimited calls • 100 SMS/day",
+        originalPrice: 100,
+        discountedPrice: 1,
+        perMonth:" Add DATA ONLY ₹180 ",
+        validitiy:"28 Days",
+        data :"3 GB/Day",
+    },
+    {
+        id: 9,
         title: "Plan ₹60",
         details: "2GB/day for 28 days • Unlimited calls • 100 SMS/day",
         originalPrice: 1,
@@ -71,27 +93,8 @@ const plans = [
         perMonth:" ADD DATA ONLY ₹60 ",
         validitiy:"28 Days",
         data :"1GB/Day",
-    },
-    {
-        id: 8,
-        title: "Plan ₹50",
-        details: "1.5GB/day for 28 days • Unlimited calls • 100 SMS/day",
-        originalPrice: 299,
-        discountedPrice: 100,
-        perMonth:"ADD DATA ONLY ₹50 ",
-        validitiy:"28 Days",
-        data :"30 GB",
-    },
-    {
-        id: 8,
-        title: "Plan ₹29",
-        details: "1.5GB/day for 28 days • Unlimited calls • 100 SMS/day",
-        originalPrice: 1,
-        discountedPrice: 1,
-        perMonth:"ADD DATA ONLY 29 ",
-        validitiy:"28 Days",
-        data :"15 GB",
-    },
+    }
+   
     
 ];
 
@@ -109,7 +112,7 @@ plans.forEach(plan => {
     planCard.className = "plan-card";
 
     planCard.innerHTML = ` <div class="_1">
-            <p>ONLY 140/month</p>
+            <p> ${plan.perMonth}</p>
             <img src="./assets/5GTag.svg" width="50px" alt="" />
           </div>
           <div class="_2">
