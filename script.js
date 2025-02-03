@@ -61,7 +61,7 @@ const plans = [
         originalPrice: 150,
         discountedPrice: 100,
         perMonth:"ONLY ₹100 ",
-        validitiy:"28 Days",
+        validitiy:"90 Days",
         data :"1.5 GB/Day",
     },
     {
