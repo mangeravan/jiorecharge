@@ -32,6 +32,26 @@ const plans = [
         data :"2.5 GB/Day",
         perMonth:"ONLY ₹128/MONTH ",
     },
+      {
+        id: 6,
+        title: "Plan ₹450",
+        details: "1.5GB/day for 90 days • Unlimited calls • 100 SMS/day",
+        originalPrice: 150,
+        discountedPrice: 100,
+        perMonth:"ONLY ₹128 ",
+        validitiy:"98 Days",
+        data :"2 GB/Day",
+    },
+     {
+        id: 6,
+        title: "Plan ₹300",
+        details: "1.5GB/day for 90 days • Unlimited calls • 100 SMS/day",
+        originalPrice: 150,
+        discountedPrice: 100,
+        perMonth:"ONLY ₹100 ",
+        validitiy:"90 Days",
+        data :"1.5 GB/Day",
+    },
     {
         id: 4,
         title: "Plan ₹280",
@@ -43,6 +63,7 @@ const plans = [
         data :"2 GB/Day",
     },
 
+  
     
     {
         id: 5,
@@ -54,16 +75,7 @@ const plans = [
         validitiy:"28 Days",
         data :"1.5 GB/Day",
     },
-    {
-        id: 6,
-        title: "Plan ₹300",
-        details: "1.5GB/day for 90 days • Unlimited calls • 100 SMS/day",
-        originalPrice: 150,
-        discountedPrice: 100,
-        perMonth:"ONLY ₹100 ",
-        validitiy:"28 Days",
-        data :"1.5 GB/Day",
-    },
+   
     {
         id: 7,
         title: "Plan ₹100",
